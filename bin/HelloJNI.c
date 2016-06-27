@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "HelloJNI.h"
 
-JNIEXPORT void JNICALL Java_HelloJNI_sayHello
+__declspec(dllexport) void JNICALL Java_HelloJNI_sayHello //changed to use for dll export? correct? 
   (JNIEnv *, jobject)
 {
 	printf("\nHello World!\n");
