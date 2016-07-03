@@ -4,7 +4,7 @@
 #include "HelloJNI.h"
 
 __declspec(dllexport) void JNICALL Java_HelloJNI_sayHello //changed to use for dll export? correct? 
-  (JNIEnv *, jobject)
+  (JNIEnv *env, jobject obj)
 {
 	printf("\nHello World!\n");
 	return;
